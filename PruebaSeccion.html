@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    
+<meta charset="UTF-8">
+    
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+ 
+<title>Secciones Interactivas de Química</title>
+    
+    
+<style>
+
+
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+            flex-wrap: nowrap; /* Alineación horizontal */
+            overflow-x: auto; /* Habilita desplazamiento horizontal si es necesario */
+        }
+
+        /* Estilos de cada sección */
+        .section {
+            background-color: #fff;
+            width: 300px;
+            margin: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+
+        .section p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Estilos de la imagen */
+        .section img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Botón interactivo */
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .container {
+                flex-wrap: wrap; /* Cambia el diseño a columnas cuando la pantalla sea más pequeña */
+                justify-content: center;
+            }
+            .section {
+                width: 90%; /* Aumenta el ancho de cada sección en pantallas pequeñas */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        
+ 
+<h1>Temas de Química Interactivos</h1>
+        
+     
+<p>Explora diferentes áreas de la química.</p>
+    
+    
+</header>
+
+    <div class="container">
+        
+ 
+<div class="section">
+            
+     
+<img src="https://via.placeholder.com/300x150?text=Qu%C3%ADmica+Org%C3%A1nica" alt="Química Orgánica">
+            
+           
+
+   
+<h2>Química Orgánica</h2>
+            
+    
+<p>Estudia los compuestos basados en carbono, esenciales para la vida. ¡Aprende sobre hidrocarburos, proteínas y más!</p>
+            <button class="button" onclick="alert('Explorando Química Orgánica...')">Explorar</button>
+        
+ 
+</div>
+
+        
+
+   
+<div class="section">
+            <img src="https://via.placeholder.com/300x150?text=Qu%C3%ADmica+Inorg%C3%A1nica" alt="Química Inorgánica">
+            
+         
+<h2>Química Inorgánica</h2>
+            
+
+        
+
+  
+<p>Se enfoca en los elementos y compuestos que no contienen carbono. Descubre sales, metales y gases.</p>
+            <button class="button" onclick="alert('Explorando Química Inorgánica...')">Explorar</button>
+        </div>
+
+        <div class="section">
+            <img src="https://via.placeholder.com/300x150?text=Reacciones+Qu%C3%ADmicas" alt="Reacciones Químicas">
+            <h2>Reacciones Químicas</h2>
+            <p>Conoce cómo los átomos se reorganizan durante las reacciones y aprende sobre la ley de conservación de la masa.</p>
+            <button class="button" onclick="alert('Explorando Reacciones Químicas...')">Explorar</button>
+        </div>
+
+        <div class="section">
+            <img src="https://via.placeholder.com/300x150?text=Termodin%C3%A1mica" alt="Termodinámica">
+            <h2>Termodinámica</h2>
+            <p>Estudia la relación entre calor, trabajo y energía en los sistemas químicos. Comprende las leyes fundamentales.</p>
+            <button class="button" onclick="alert('Explorando Termodinámica...')">Explorar</button>
+        </div>
+
+        <div class="section">
+            <img src="https://via.placeholder.com/300x150?text=Qu%C3%ADmica+Anal%C3%ADtica" alt="Química Analítica">
+            <h2>Química Analítica</h2>
+            <p>Aprende las técnicas y métodos utilizados para identificar y cuantificar sustancias químicas.</p>
+            <button class="button" onclick="alert('Explorando Química Analítica...')">Explorar</button>
+        </div>
+    </div>
+
+</body>
+</html>
